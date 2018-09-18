@@ -6,16 +6,19 @@ var rl = readline.createInterface({
 });
 
 var a = 0;
+
+rl.on('line', (input) => {
+  a = parseInt(input);
+  // console.log(`Received: ${input}`);
+});
+
 var b = 0;
 
-rl.on('line', function(line){
-  a = parseInt(line);
+rl.on('line', (input) => {
+  b = parseInt(input);
+  // console.log(`Received: ${input}`);
 });
 
-rl.on('line', function(line){
-  b = parseInt(line);
-});
 
 var c = a + b;
-
 console.log(c);
