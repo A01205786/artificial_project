@@ -1,2 +1,3 @@
 #!/bin/sh
-node calculator.js
+gcc calculator.c -o program
+./program
