@@ -6,11 +6,12 @@ var rl = readline.createInterface({
 });
 
 var arr = [];
-
+var i = 0;
 rl.on('line', function(line){
   arr.push(parseInt(line));
+  i++;
+  if(i == 2){
+    var result = arr[0] + arr[1];
+    console.log(result);
+  }
 });
-
-var result = arr[0] + arr[1];
-
-console.log(result);
