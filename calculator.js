@@ -14,5 +14,5 @@ rl.on('line', function(line){
 
 
   var result = arr[0] + arr[1];
-  // console.log(result);
+  console.log(result);
 });
